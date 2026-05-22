@@ -13,7 +13,7 @@ export type Todo = {
 export type PricingPlan = {
   id: string;
   name: string;
-  price: number;
+  price: number | string;
   features: string[];
   highlighted?: boolean;
   period?: string;
