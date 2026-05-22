@@ -15,17 +15,25 @@ export type PricingPlan = {
   name: string;
   price: number;
   features: string[];
+  highlighted?: boolean;
+  period?: string;
+  description?: string;
+  cta?: string;
 };
 
 export type Stat = {
-  id: string;
+  id?: string;
   label: string;
   value: string | number;
 };
 
 export type Testimonial = {
-  id: string;
-  author: string;
-  content: string;
+  id?: string;
+  name?: string;
+  author?: string;
+  quote?: string;
+  content?: string;
+  avatar?: string;
+  role?: string;
   rating?: number;
 };
