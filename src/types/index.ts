@@ -9,3 +9,23 @@ export type Todo = {
   priority: Priority;
   createdAt: number;
 };
+
+export type PricingPlan = {
+  id: string;
+  name: string;
+  price: number;
+  features: string[];
+};
+
+export type Stat = {
+  id: string;
+  label: string;
+  value: string | number;
+};
+
+export type Testimonial = {
+  id: string;
+  author: string;
+  content: string;
+  rating?: number;
+};
